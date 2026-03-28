@@ -12,10 +12,11 @@ const App: React.FC = () => {
       <NavBar />
       <main>
         <Routes>
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/resume" element={<ResumePage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-        </Routes>
+            <Route path="/" element={<AboutPage />} /> 
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/resume" element={<ResumePage />} />
+            <Route path="/about" element={<AboutPage />} /> 
+          </Routes>
       </main>
       <Footer />
     </>
