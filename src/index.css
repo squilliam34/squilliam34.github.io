@@ -10,7 +10,7 @@
   --border: #e6e6e6;
 }
 
-.dark {
+html.dark {
   --bg: #171717;
   --surface: #232323;
   --text: #f5f5f5;
