@@ -25,7 +25,7 @@ export default function Hero() {
 
             {/* Name */}
             <h1 className="text-6xl md:text-7xl font-bold tracking-tight mb-4">
-                Will Fan
+                William Fan
             </h1>
 
             {/* Education */}
