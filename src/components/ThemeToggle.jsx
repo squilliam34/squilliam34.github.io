@@ -9,6 +9,7 @@ export default function ThemeToggle({ theme, toggleTheme }) {
         borderColor: 'var(--border)',
         background: 'var(--surface)',
         color: 'var(--text)',
+        cursor: 'pointer'
       }}
       aria-label="Toggle theme"
     >
