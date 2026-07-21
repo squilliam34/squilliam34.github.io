@@ -50,8 +50,8 @@ export default function Hero() {
             {/* Navigation Buttons */}
             <div className="flex flex-wrap justify-center gap-6 mb-16">
                 <Button href="#projects" primary>Projects</Button>
-                <Button href="#about">About</Button>
                 <Button href="#writing">Writing</Button>
+                <Button href="#about">About</Button>
                 <Button href="#contact">Contact</Button>
             </div>
 

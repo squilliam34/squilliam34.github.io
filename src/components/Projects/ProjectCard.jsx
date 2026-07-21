@@ -41,7 +41,7 @@ export default function ProjectCard({ project }) {
 
             <a
                 href={project.link}
-                className="project-link"
+                className="external-link"
             >
                 View Project
                 <FiArrowUpRight />
