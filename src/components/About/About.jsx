@@ -15,8 +15,7 @@ export default function About() {
                     About
                 </h2>
                 <p>
-                    A little context about my background,
-                    interests, and what I'm exploring.
+                    A little context about my background and interests.
                 </p>
             </div>
 

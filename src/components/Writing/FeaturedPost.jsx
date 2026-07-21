@@ -11,9 +11,8 @@ export default function FeaturedPost() {
                 Leveraged ETFs and Portfolio Insurance
             </h3>
             <p>
-                Exploring the mechanics, risks, and
-                misconceptions surrounding leveraged
-                exchange-traded funds.
+                Discussing the mechanics and risks of leveraged
+                ETFs and offering a historical comparison.
             </p>
             <a
                 href="https://substack.com/home/post/p-207799513"
