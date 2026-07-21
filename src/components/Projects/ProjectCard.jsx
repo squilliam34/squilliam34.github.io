@@ -42,6 +42,8 @@ export default function ProjectCard({ project }) {
             <a
                 href={project.link}
                 className="external-link"
+                target="_blank"
+                rel="noopener noreferrer"
             >
                 View Project
                 <FiArrowUpRight />
