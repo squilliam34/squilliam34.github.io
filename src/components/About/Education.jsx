@@ -11,7 +11,7 @@ export default function Education() {
 
             <div className="education-item">
                 <h4>Chicago Booth School of Business</h4>
-                <p>Master of Science in Finance</p>
+                <p>Master in Finance</p>
             </div>
 
         </div>

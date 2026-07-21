@@ -1,5 +1,5 @@
 import Education from "./Education";
-// import Links from "./Links";
+import Links from "./Links";
 // import Interests from "./Interests";
 
 export default function About() {
@@ -36,7 +36,7 @@ export default function About() {
                 </div>
                 <aside className="about-sidebar">
                     <Education />
-                    {/* <ProfileLinks /> */}
+                    <Links />
                 </aside>
             </div>
 

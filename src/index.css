@@ -475,3 +475,43 @@ html.dark .project-card:hover {
 
     margin: 0;
 }
+
+.about-links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: .8rem;
+}
+
+
+.about-link {
+    display: flex;
+
+    align-items: center;
+
+    gap: .6rem;
+
+    width: fit-content;
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    transition: color .2s ease;
+}
+
+
+.about-link:hover {
+    color: var(--accent);
+}
+
+
+.about-link svg:last-child {
+    transition: transform .2s ease;
+}
+
+
+.about-link:hover svg:last-child {
+    transform: translate(3px, -3px);
+}
