@@ -403,3 +403,37 @@ html.dark .project-card:hover {
 
     white-space: nowrap;
 }
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 4rem;
+
+    align-items: start;
+}
+
+
+.about-sidebar {
+    border-left: 1px solid rgba(127,127,127,.5);
+
+    padding-left: 2rem;
+}
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 4rem;
+
+    align-items: start;
+}
+
+
+.about-sidebar {
+    border-left: 1px solid rgba(127,127,127,.5);
+
+    padding-left: 2rem;
+}
