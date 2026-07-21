@@ -477,3 +477,38 @@ html.dark .project-card:hover {
     opacity: 1;
     width: 80px;
 }
+
+.footer {
+    margin-top: 6rem;
+    padding: 3rem 0;
+    border-top: 1px solid var(--divider);
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+}
+
+.footer h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.footer p {
+    margin: 0;
+    color: var(--text);
+}
+
+.footer span {
+    color: var(--text-secondary);
+    font-size: .9rem;
+}
+
+.footer small {
+    margin-top: 1rem;
+    color: var(--text-secondary);
+    font-size: .8rem;
+}
