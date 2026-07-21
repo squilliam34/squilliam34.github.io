@@ -28,8 +28,9 @@ export default function Writing() {
                         <ReadingList />
                 </div>
             </div>
-
-            <RecentPosts />
+            <Reveal>
+                <RecentPosts />
+            </Reveal>
         </section>
     );
 }
