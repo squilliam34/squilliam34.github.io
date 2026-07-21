@@ -58,3 +58,31 @@ h1, h2, h3, h4 {
     padding-inline: 2rem;
   }
 }
+
+@keyframes gentleBounce {
+  0%,
+  100% {
+    transform: translateY(0px);
+    opacity: 0.75;
+  }
+
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
+
+.gentle-bounce {
+  animation: gentleBounce 2.5s ease-in-out infinite;
+}
+
+.interactive-muted {
+  color: var(--text-secondary);
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.interactive-muted:hover {
+  color: var(--accent);
+}

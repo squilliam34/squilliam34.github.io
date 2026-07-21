@@ -2,13 +2,18 @@ import Button from "../Button";
 import ThemeToggle from "../ThemeToggle";
 import { useTheme } from "../../hooks/useTheme";
 import RotatingText from "./RotatingText";
+import ScrollIndicator from "./ScrollIndicator";
 
 export default function Hero() {
 
     const { theme, toggleTheme } = useTheme();
 
     return (
-        <section className="min-h-screen flex flex-col items-center justify-center px-8 text-center">
+        <section 
+            id="hero" 
+            className=
+                "relative min-h-screen flex flex-col items-center justify-center px-8 text-center"
+        >
 
             {/* Theme Toggle */}
             <div className="absolute top-8 right-8">
@@ -51,15 +56,7 @@ export default function Hero() {
             </div>
 
             {/* Scroll */}
-            <div
-                className="flex flex-col items-center"
-                style={{ color: "var(--text-secondary)" }}
-            >
-                <span className="text-2xl">↓</span>
-                <span className="text-sm tracking-wide uppercase">
-                    Scroll
-                </span>
-            </div>
+            <ScrollIndicator />
 
         </section>
     );
