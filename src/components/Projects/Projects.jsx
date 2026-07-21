@@ -13,8 +13,8 @@ export default function Projects() {
                 <h2>Projects</h2>
 
                 <p>
-                    Building quantitative tools and research systems 
-                    at the intersection of finance, data, and machine learning.
+                    Projects and analytical tools diving into the 
+                    intersection of finance, programming, and mathematics.
                 </p>
             </div>
                 <div className="grid gap-8 md:grid-cols-2">

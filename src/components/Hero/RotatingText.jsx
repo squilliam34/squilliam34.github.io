@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 
 const words = [
     "Quantitative Finance",
-    "Machine Learning",
-    "Systematic Investing",
+    "Builder & Explorer",
+    "Market Enthusiast",
     "Research & Writing",
 ];
 
@@ -21,7 +21,7 @@ export default function RotatingText() {
                 setVisible(true);
             }, 300);
 
-        }, 3000);
+        }, 2000);
 
         return () => clearInterval(interval);
 

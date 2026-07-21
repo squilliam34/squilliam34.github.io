@@ -43,8 +43,8 @@ export default function Hero() {
                 className="max-w-xl text-lg leading-relaxed mb-10"
                 style={{ color: "var(--text-secondary)" }}
             >
-                Building quantitative tools for understanding financial
-                markets through machine learning, networks, and data.
+                Studying financial markets through data, models, 
+                and written exploration.
             </p>
 
             {/* Navigation Buttons */}
