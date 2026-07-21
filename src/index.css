@@ -437,3 +437,41 @@ html.dark .project-card:hover {
 
     padding-left: 2rem;
 }
+
+.about-section {
+    margin-bottom: 2.5rem;
+}
+
+
+.about-section h3 {
+    font-size: 0.85rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .12em;
+
+    color: var(--accent);
+
+    margin-bottom: 1.25rem;
+}
+
+
+.education-item {
+    margin-bottom: 1.5rem;
+}
+
+
+.education-item h4 {
+    font-size: 1.05rem;
+
+    margin-bottom: .35rem;
+}
+
+
+.education-item p {
+    color: var(--text-secondary);
+
+    line-height: 1.5;
+
+    margin: 0;
+}

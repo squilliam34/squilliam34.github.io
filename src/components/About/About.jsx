@@ -1,6 +1,6 @@
 import Education from "./Education";
-import Links from "./Links";
-import Interests from "./Interests";
+// import Links from "./Links";
+// import Interests from "./Interests";
 
 export default function About() {
     return (
@@ -32,11 +32,11 @@ export default function About() {
                         and joining Chicago Booth's Master
                         in Finance program.
                     </p>
+                    {/* <Interests /> */}
                 </div>
                 <aside className="about-sidebar">
                     <Education />
-                    <ProfileLinks />
-                    <Interests />
+                    {/* <ProfileLinks /> */}
                 </aside>
             </div>
 
