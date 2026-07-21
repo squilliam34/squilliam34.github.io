@@ -426,7 +426,7 @@ html.dark .project-card:hover {
 
 .side-nav {
     position: fixed;
-    right: 2rem;
+    right: 1rem;
     top: 50%;
     transform: translateY(-50%);
     z-index: 100;
@@ -452,6 +452,11 @@ html.dark .project-card:hover {
     transition:
         opacity .3s ease,
         width .3s ease;
+}
+
+.side-nav a.active {
+    color: var(--accent);
+    transform: translateX(-6px);
 }
 
 .side-nav-inner::before {
