@@ -16,8 +16,10 @@ export default function FeaturedPost() {
                 exchange-traded funds.
             </p>
             <a
-                href="#"
+                href="https://substack.com/home/post/p-207799513"
                 className="external-link"
+                target="_blank"
+                rel="noopener noreferrer"
             >
                 Read on Substack
                 <FiArrowUpRight />

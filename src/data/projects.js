@@ -10,7 +10,7 @@ export const projects = [
             "Network Analysis",
         ],
 
-        link: "#https://github.com/squilliam34/gravity/tree/main",
+        link: "https://github.com/squilliam34/gravity/tree/main",
     },
 
     {
@@ -24,6 +24,6 @@ export const projects = [
             "Kalman Filtering",
         ],
 
-        link: "#https://github.com/squilliam34/kf-vol-surface",
+        link: "https://github.com/squilliam34/kf-vol-surface",
     },
 ];
