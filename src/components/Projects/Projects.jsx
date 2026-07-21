@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import Reveal from "../Motion/Reveal";
 import { projects } from "../../data/projects";
 
 export default function Projects() {
@@ -16,18 +17,17 @@ export default function Projects() {
                     at the intersection of finance, data, and machine learning.
                 </p>
             </div>
+                <div className="grid gap-8 md:grid-cols-2">
+                    {projects.map((project) => (
+                        <Reveal>
+                            <ProjectCard
+                                key={project.title}
+                                project={project}
+                            />
+                        </Reveal>
+                    ))}
 
-            <div className="grid gap-8 md:grid-cols-2">
-
-                {projects.map((project) => (
-                    <ProjectCard
-                        key={project.title}
-                        project={project}
-                    />
-                ))}
-
-            </div>
-
+                </div>
         </section>
     );
 }

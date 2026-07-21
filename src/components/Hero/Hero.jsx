@@ -52,7 +52,6 @@ export default function Hero() {
                 <Button href="#projects" primary>Projects</Button>
                 <Button href="#writing">Writing</Button>
                 <Button href="#about">About</Button>
-                <Button href="#contact">Contact</Button>
             </div>
 
             {/* Scroll */}
