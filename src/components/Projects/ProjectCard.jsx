@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 
-export default function ProjectCard() {
+export default function ProjectCard({ project }) {
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
     function handleMouseMove(e) {
@@ -22,23 +22,28 @@ export default function ProjectCard() {
                 "--y": `${position.y}px`,
             }}
         >
+
             <h3>
-                Gravity Model for Stocks
+                {project.title}
             </h3>
 
             <p>
-                A network-based approach to portfolio construction
-                using semantic similarity and factor exposures.
+                {project.description}
             </p>
 
             <div className="project-tags">
-                <span>Python</span>
-                <span>Machine Learning</span>
-                <span>Finance</span>
+                {project.technologies.map((tech) => (
+                    <span key={tech}>
+                        {tech}
+                    </span>
+                ))}
             </div>
 
-            <a href="#" className="project-link">
-                View Project 
+            <a
+                href={project.link}
+                className="project-link"
+            >
+                View Project
                 <FiArrowUpRight />
             </a>
 

@@ -1,15 +1,28 @@
 import ProjectCard from "./ProjectCard";
+import { projects } from "../../data/projects";
 
 export default function Projects() {
     return (
-        <section id="projects" className="container py-32">
-            <h2>Projects</h2>
+        <section
+            id="projects"
+            className="container py-32"
+        >
+
+            <h2>
+                Projects
+            </h2>
 
             <div className="grid gap-8 md:grid-cols-2">
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
+
+                {projects.map((project) => (
+                    <ProjectCard
+                        key={project.title}
+                        project={project}
+                    />
+                ))}
+
             </div>
+
         </section>
     );
 }
