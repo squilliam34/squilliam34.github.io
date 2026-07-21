@@ -1,5 +1,6 @@
 import FeaturedPost from "./FeaturedPost";
 import ReadingList from "./ReadingList";
+import RecentPosts from "./RecentPosts";
 
 export default function Writing() {
     return (
@@ -18,10 +19,14 @@ export default function Writing() {
             </div>
 
 
-            <div className="writing-grid">
-                <FeaturedPost />
-                <ReadingList />
+            <div className="writing-top">
+                <div className="writing-grid">
+                    <FeaturedPost />
+                    <ReadingList />
+                </div>
             </div>
+
+            <RecentPosts />
         </section>
     );
 }
