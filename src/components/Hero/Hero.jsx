@@ -1,6 +1,7 @@
 import Button from "../Button";
 import ThemeToggle from "../ThemeToggle";
 import { useTheme } from "../../hooks/useTheme";
+import RotatingText from "./RotatingText";
 
 export default function Hero() {
 
@@ -27,13 +28,10 @@ export default function Hero() {
                 Incoming Chicago Booth Master in Finance
             </p>
 
-            {/* Rotating subtitle placeholder */}
-            <p
-                className="text-2xl font-medium mb-6"
-                style={{ color: "var(--accent)" }}
-            >
-                Quantitative Finance
-            </p>
+            {/* Rotating subtitle */}
+            <div className="h-10 flex items-center justify-center mb-6">
+                <RotatingText />
+            </div>      
 
             {/* Short description */}
             <p
