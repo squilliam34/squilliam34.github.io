@@ -26,7 +26,7 @@ export default function About() {
                     <Reveal>
                         <p className="about-content">
                             I have always been drawn to building and exploring,
-                            whether that's been creating worlds with LEGO and 
+                            whether that's been creating worlds with LEGOs and 
                             Pokémon as a kid or building tools that help me 
                             understand complex systems today.
                             <br /><br />
