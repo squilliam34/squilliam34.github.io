@@ -1,7 +1,27 @@
-export default function ProjectCard() {
-    return (
-        <article className="project-card">
+import { useState } from "react";
+import { FiArrowUpRight } from "react-icons/fi";
 
+export default function ProjectCard() {
+    const [position, setPosition] = useState({ x: 0, y: 0 });
+
+    function handleMouseMove(e) {
+        const rect = e.currentTarget.getBoundingClientRect();
+
+        setPosition({
+            x: e.clientX - rect.left,
+            y: e.clientY - rect.top,
+        });
+    }
+
+    return (
+        <article
+            className="project-card"
+            onMouseMove={handleMouseMove}
+            style={{
+                "--x": `${position.x}px`,
+                "--y": `${position.y}px`,
+            }}
+        >
             <h3>
                 Gravity Model for Stocks
             </h3>
@@ -18,7 +38,8 @@ export default function ProjectCard() {
             </div>
 
             <a href="#" className="project-link">
-                View Project →
+                View Project 
+                <FiArrowUpRight />
             </a>
 
         </article>
