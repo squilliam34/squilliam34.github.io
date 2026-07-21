@@ -8,9 +8,14 @@ export default function Projects() {
             className="container py-32"
         >
 
-            <h2>
-                Projects
-            </h2>
+            <div className="section-header">
+                <h2>Projects</h2>
+
+                <p>
+                    Building quantitative tools and research systems 
+                    at the intersection of finance, data, and machine learning.
+                </p>
+            </div>
 
             <div className="grid gap-8 md:grid-cols-2">
 
