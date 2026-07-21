@@ -93,18 +93,13 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   padding: 0.85rem 1.75rem;
-
   border: 1px solid rgba(127,127,127,.18);
   border-radius: 9999px;
-
   background: transparent;
-
   color: var(--text);
   text-decoration: none;
   font-weight: 500;
-
   transition:
     color 0.2s ease,
     border-color 0.2s ease,
@@ -115,9 +110,7 @@ h1, h2, h3, h4 {
 .nav-button:hover {
   color: var(--accent);
   border-color: var(--accent);
-
   transform: translateY(-2px);
-
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
@@ -127,12 +120,9 @@ html.dark .nav-button:hover {
 
 .project-card {
     padding: 2rem;
-
     border: 1px solid rgba(127,127,127,.18);
     border-radius: 1rem;
-
     background: var(--surface);
-
     transition:
         transform 0.25s ease,
         border-color 0.25s ease,
@@ -141,9 +131,7 @@ html.dark .nav-button:hover {
 
 .project-card:hover {
     transform: translateY(-4px);
-
     border-color: var(--accent);
-
     box-shadow: 0 12px 30px rgba(0,0,0,.08);
 }
 
@@ -151,18 +139,13 @@ html.dark .project-card:hover {
     box-shadow: 0 12px 30px rgba(0,0,0,.3);
 }
 
-
 .project-card {
     position: relative;
     overflow: hidden;
-
     padding: 2rem;
-
     border: 1px solid rgba(127,127,127,.18);
     border-radius: 1rem;
-
     background: var(--surface);
-
     transition:
         transform 0.25s ease,
         border-color 0.25s ease,
@@ -171,7 +154,6 @@ html.dark .project-card:hover {
 
 .project-card::before {
     content: "";
-
     position: absolute;
     inset: 0;
 
@@ -187,12 +169,9 @@ html.dark .project-card:hover {
         );
 
     opacity: 0;
-
     transition: opacity .3s ease;
-
     pointer-events: none;
 }
-
 
 .project-card:hover::before {
     opacity: 1;
@@ -206,36 +185,25 @@ html.dark .project-card:hover {
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-
     gap: .5rem;
-
     margin-bottom: 1.5rem;
 }
 
-
 .project-tags span {
     padding: .35rem .75rem;
-
     border-radius: 9999px;
-
     border: 1px solid rgba(127,127,127,.18);
-
     font-size: .85rem;
-
     color: var(--text-secondary);
 }
-
 
 .external-link {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-
     color: var(--text);
     text-decoration: none;
-
     font-weight: 500;
-
     transition:
         color 0.2s ease;
 }
@@ -272,92 +240,66 @@ html.dark .project-card:hover {
     max-width: none;
 }
 
-
 .featured-post .eyebrow {
     margin-bottom: .75rem;
-
     color: var(--accent);
-
     font-size: .85rem;
-
     text-transform: uppercase;
-
     letter-spacing: .12em;
 }
 
-
 .featured-post h3 {
     font-size: 2.25rem;
-
     margin-bottom: 1rem;
 }
 
-
 .featured-post p {
     color: var(--text-secondary);
-
     line-height: 1.7;
-
     margin-bottom: 1.5rem;
 }
 
 .reading-list-container {
     border-left: 1px solid var(--divider);
-
     padding-left: 2rem;
 }
 
-
 .reading-title {
     font-size: 1.25rem;
-
     margin-bottom: 1.25rem;
 }
 
-
 .reading-list {
     list-style: none;
-
     padding: 0;
-
     display: flex;
     flex-direction: column;
-
     gap: .85rem;
 }
 
 .reading-list li {
     color: var(--text-secondary);
-
     line-height: 1.5;
 }
 
 .writing-grid {
     display: grid;
-
     grid-template-columns: 2fr 1fr;
-
     gap: 3rem;
-
     align-items: start;
 }
-
 
 @media (max-width: 768px) {
     .reading-list-container {
         border-left: none;
-
         border-top: 1px solid var(--divider);
-
         padding-left: 0;
-
         padding-top: 2rem;
     }
 }
 
 .writing-top {
     padding-bottom: 3rem;
-
     border-bottom: 1px solid var(--divider);
 }
 
@@ -373,145 +315,111 @@ html.dark .project-card:hover {
     display: flex;
     justify-content: space-between;
     align-items: start;
-
     padding: 1.5rem 0;
-
     border-bottom: 1px solid var(--border);
-
     text-decoration: none;
-
     color: inherit;
 }
-
 
 .post-row h4 {
     margin-bottom: .5rem;
 }
 
-
 .post-row p {
     color: var(--text-secondary);
-
     max-width: 600px;
 }
 
-
 .post-row span {
     color: var(--text-secondary);
-
     font-size: .9rem;
-
     white-space: nowrap;
 }
 
 .about-grid {
     display: grid;
-
     grid-template-columns: 2fr 1fr;
-
     gap: 4rem;
-
     align-items: start;
 }
 
+.about-content {
+    color: var(--text-secondary);
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 3rem;
+
+    max-width: 650px;
+}
 
 .about-sidebar {
     border-left: 1px solid rgba(127,127,127,.5);
-
     padding-left: 2rem;
 }
-
-.about-grid {
-    display: grid;
-
-    grid-template-columns: 2fr 1fr;
-
-    gap: 4rem;
-
-    align-items: start;
-}
-
-
-.about-sidebar {
-    border-left: 1px solid rgba(127,127,127,.5);
-
-    padding-left: 2rem;
-}
-
-.about-section {
-    margin-bottom: 2.5rem;
-}
-
 
 .about-section h3 {
     font-size: 0.85rem;
-
     text-transform: uppercase;
-
     letter-spacing: .12em;
-
     color: var(--accent);
-
     margin-bottom: 1.25rem;
 }
-
 
 .education-item {
     margin-bottom: 1.5rem;
 }
 
-
 .education-item h4 {
     font-size: 1.05rem;
-
     margin-bottom: .35rem;
 }
 
-
 .education-item p {
     color: var(--text-secondary);
-
     line-height: 1.5;
-
     margin: 0;
 }
 
 .about-links {
     display: flex;
-
     flex-direction: column;
-
     gap: .8rem;
 }
 
-
 .about-link {
     display: flex;
-
     align-items: center;
-
     gap: .6rem;
-
     width: fit-content;
-
     color: var(--text);
-
     text-decoration: none;
-
     transition: color .2s ease;
 }
-
 
 .about-link:hover {
     color: var(--accent);
 }
 
-
 .about-link svg:last-child {
     transition: transform .2s ease;
 }
 
-
 .about-link:hover svg:last-child {
     transform: translate(3px, -3px);
+}
+
+.interest-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.interest-list li {
+    color: var(--text-secondary);
+    line-height: 1.5;
 }
