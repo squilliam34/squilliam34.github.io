@@ -423,3 +423,52 @@ html.dark .project-card:hover {
     color: var(--text-secondary);
     line-height: 1.5;
 }
+
+.side-nav {
+    position: fixed;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.side-nav-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: .75rem;
+    border-radius: 999px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+.side-nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: .9rem;
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+    transition:
+        opacity .3s ease,
+        width .3s ease;
+}
+
+.side-nav-inner::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin: auto;
+}
+
+.side-nav:hover .side-nav-inner {
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.side-nav:hover a {
+    opacity: 1;
+    width: 80px;
+}
