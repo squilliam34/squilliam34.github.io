@@ -1,4 +1,5 @@
 import {
+    FiMail,
     FiFileText,
     FiLinkedin,
     FiBookOpen,
@@ -7,6 +8,12 @@ import {
 
 
 const links = [
+    {
+        name: "Email",
+        icon: FiMail,
+        href: "mailto:wfan2@chicagobooth.edu",
+    },
+
     {
         name: "Resume",
         icon: FiFileText,
@@ -53,8 +60,9 @@ export default function Links() {
                                 {link.name}
                             </span>
 
-                            <FiArrowUpRight size={14} />
-
+                            {link.name !== "Email" && (
+                                <FiArrowUpRight size={14}/>
+                            )}
                         </a>
                     );
                 })}

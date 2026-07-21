@@ -23,10 +23,10 @@ export default function About() {
 
                 <div>
                     <p className="about-content">
-                        I have always been drawn to building and exploring --
-                        from creating worlds with LEGO and Pokémon as a kid
-                        to building tools that help me understand complex
-                        systems today.
+                        I have always been drawn to building and exploring,
+                        whether that's been creating worlds with LEGO and 
+                        Pokémon as a kid or building tools that help me 
+                        understand complex systems today.
                         <br /><br />
                         That curiosity eventually led me to financial markets.
                         After opening my first investment account during college,
